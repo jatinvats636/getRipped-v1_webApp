@@ -1,2 +1,2 @@
-# getRipped-1_WebApp
-A simple webapp for workout schedule.
+# getRipped-v1
+A simple and responsive Web App made to manage workout schedule.
