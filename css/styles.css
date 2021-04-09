@@ -290,9 +290,11 @@ td {
   font-family: "Alfa Slab One";
   border-radius: 100%;
   text-align: center;
-  width: 20vw;
-  height: 20vw;
-  padding: 40px 0px;
+  align-self: center;
+  font-size: 17px;
+  width: 100px;
+  height: 100px;
+  padding: 39px 0px;
   color: #fdfefe;
   text-decoration: none;
 }
