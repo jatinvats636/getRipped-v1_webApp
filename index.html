@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<!-- class="hidden-xs" -->
+
+<head>
+    <title>getRipped</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/ms-icon-310x310.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a1c4782885.js" crossorigin="anonymous"></script>
+</head>
+
+<body lang="en">
+    <header>
+        <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <h1 id="get">get</h1>
+                            <h1 id="ripped">Ripped</h1>
+                        </a>
+                    </div>
+
+                    <button id="btn-id" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle-Button</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d1"
+                                onclick="toggle_view('mon'); toggle_color(this.id); disable()">Monday</a>
+                        </li>
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d2"
+                                onclick="toggle_view('tue'); toggle_color(this.id); disable()">Tuesday</a>
+                        </li>
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d3"
+                                onclick="toggle_view('wed'); toggle_color(this.id); disable()">Wednesday</a>
+                        </li>
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d4"
+                                onclick="toggle_view('thu'); toggle_color(this.id); disable()">Thursday</a>
+                        </li>
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d5"
+                                onclick="toggle_view('fri'); toggle_color(this.id); disable()">Friday</a>
+                        </li>
+                        <li>
+                            <a class="neomorphic-shadows neomorphic-shadows-hover" id="d6"
+                                onclick="toggle_view('sat'); toggle_color(this.id); disable()">Saturday</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hidden-lg hidden-md" id="icons">
+            <div id="row1">
+                <a id="icon1" onclick="icon_toggle('mon');">Mon</a>
+                <a id="icon2" onclick="icon_toggle('tue');">Tue</a>
+                <a id="icon3" onclick="icon_toggle('wed');">Wed</a>
+            </div>
+            <div id="row2">
+                <a id="icon4" onclick="icon_toggle('thu');">Thu</a>
+                <a id="icon5" onclick="icon_toggle('fri');">Fri</a>
+                <a id="icon6" onclick="icon_toggle('sat');">Sat</a>
+            </div>
+        </div>
+
+        <!--Monday starts here-->
+        <div id="mon">
+            <table cellpadding="12">
+                <th class="text-center" colspan=4>Monday || Shoulders + ABS</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td>Standing Barbell Press<br>+<br>Standing Single Hand DB Press</td>
+                    <td>4 sets</td>
+                    <td>10</td>
+                    <td><b>5-5-7.5<br>+<br>5-5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Cable Side Raise<br>+<br>DB Side Raise</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>5-5-5<br>+<br>5-5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Cable Front Raise<br>+<br>KettleBell Front Raise</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>5-5-5<br>+<br>5-5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Machine Rear Delt Fly<br>+<br>Cable Rear Delt Fly</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>15-15-20<br>+<br>5-5-5</b></td>
+                <tr>
+                    <td>Battle Rope</td>
+                    <td>3 sets</td>
+                    <td>30 sec</td>
+                    <td><b>- - - -</b></td>
+                </tr>
+
+            </table>
+        </div>
+        <br class="hidden-xs"><br class="hidden-xs">
+        <!--Tuesday-->
+        <div id="tue">
+            <table cellpadding="12">
+                <th class="text-center" colspan=4>Tuesday || Arms + Planks + HIIC</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td>Barbell Curl<br>+<br>Barbell Preacher Curl</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>5-5-7.5<br>+<br>5-5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Barbell Skull Crusher<br>+<br>DB Overhead Extension</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>2.5-5-5<br>+<br>5-5-5</b></td>
+                </tr>
+                <tr>
+                    <td>Cable Curl<br>+<br>Conc. Curl</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>20-25-30<br>+<br>5-5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Rope Tricep Pressdown<br>+<br>Rope Overhead Extension</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>20-25-25<br>+<br>10-15-15</b></td>
+                <tr>
+                    <td>Barbell Wrist Curl<b> (Overhand)</b><br>+<br>Barbell Wrist Curl<b> (Underhand)</b></td>
+                    <td>4 sets</td>
+                    <td>15</td>
+                    <td><b>15-15-20<br>+<br>5-5-10</b></td>
+                </tr>
+                <tr>
+                    <td>Planks</td>
+                    <td>3 sets</td>
+                    <td>120 sec</td>
+                    <td>------</td>
+                </tr>
+                <tr>
+                    <td>Sprint</td>
+                    <td colspan=3>20 min</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+
+        <br class="hidden-xs"><br class="hidden-xs">
+
+        <div id="wed">
+            <table cellpadding="12">
+                <th class="text-center" colspan=40>Wednesday|| Back</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td>Rope Pulldown<br>+<br>Rope Rows</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>20-25-30</b></td>
+                </tr>
+                <tr>
+                    <td>Single Hand Lat Pulldown</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>10-10-15</b></td>
+                </tr>
+                <tr>
+                    <td>Cable Bar Rows<br>+<br>DB Rows</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>25-30-35<br>+<br>10-12.5-15</b></td>
+                </tr>
+                <tr>
+                    <td>Barbell Shrugs <b>Drop Set</b></td>
+                    <td>3 sets</td>
+                    <td>8</td>
+                    <td><b>17.5-12.5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Hyper Extension<b> (Drop Set)</b></td>
+                    <td>3 sets</td>
+                    <td>8</td>
+                    <td><b>10-7.5-5</b></td>
+                </tr>
+            </table>
+        </div>
+        <br class="hidden-xs"><br class="hidden-xs">
+        <div id="thu">
+            <table cellpadding="12">
+                <th class="text-center" colspan=4>Thursday|| Chest + ABS + HIIC</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td>Barbell Press<br>+<br>Cable Fly</td>
+                    <td>4 sets</td>
+                    <td>12</td>
+                    <td><b></b></td>
+                </tr>
+                <tr>
+                    <td>Incline DB Press<br>+<br>Decline Dips</td>
+                    <td>4 sets</td>
+                    <td>12<br>+<br>8-10</td>
+                    <td><b></b></td>
+                </tr>
+                <tr>
+                    <td>DB Press on Stability Ball</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b></b></td>
+                </tr>
+                <tr>
+                    <td>Plyo PushUps <b>(Medicine Ball)</b></td>
+                    <td>3 sets</td>
+                    <td>8-12</td>
+                    <td><b></b></td>
+
+            </table>
+        </div>
+
+        <br class="hidden-xs"><br class="hidden-xs">
+        <div id="fri">
+            <table cellpadding="12">
+                <th class="text-center" colspan=4>Friday|| Legs + Planks</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td>Barbell Squat</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>7.5-10-12.5</b></td>
+                </tr>
+                <tr>
+                    <td>Barbell Split Squat</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>7.5-10-12.5</b></td>
+                </tr>
+                <tr>
+                    <td>Barbell Deadlift</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>25-30-35</b></td>
+                </tr>
+                <tr>
+                    <td>Single Leg Press<br>+<br>Laying Leg Curl</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>5-7.5-7.5</b></td>
+                </tr>
+                <tr>
+                    <td>Box Jump</td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>20-25-25</b></td>
+                </tr>
+                <tr>
+                    <td>Calf Press <b>(on Leg Press Machine)</b></td>
+                    <td>3 sets</td>
+                    <td>12</td>
+                    <td><b>5-5-5</b></td>
+                </tr>
+            </table>
+        </div>
+        <br class="hidden-xs"><br class="hidden-xs">
+        <div id="sat">
+            <table cellpadding="12">
+                <th class="text-center" colspan=4>Saturday || Slow Cardio</th>
+                <tr>
+                    <td><b><u>Workout</b></u></td>
+                    <td><b><u>Sets</b></u></td>
+                    <td><b><u>Reps</b></u></td>
+                    <td><b><u>Intensity</b></u></td>
+                </tr>
+                <tr>
+                    <td colspan=2>Cycling OR Incline Walk</td>
+                    <td colspan=2>30 min</td>
+                </tr>
+                <tr>
+                    <th class="text-center" colspan=4>ABS</th>
+                </tr>
+                <tr>
+                    <td>Incline Crunch With Bar<br>+<br>Hanging Knee Raise</td>
+                    <td>3 sets</td>
+                    <td>10<br>+<br>15</td>
+                    <td><b>0-5-5</b></td>
+                </tr>
+                <tr>
+                    <td>Rope Crunches<br>+<br>Lying Leg Raise (Stability Ball)</td>
+                    <td>3 sets</td>
+                    <td>15<br>+<br>12</td>
+                    <td><b>30-35-40</b></td>
+                </tr>
+                <tr>
+                    <td>Russian Ball Twist</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>3.5-5-5</b></td>
+                <tr>
+                    <td>Oblique Side Crunch</td>
+                    <td>3 sets</td>
+                    <td>15</td>
+                    <td><b>- - - - </b></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </header>
+    <br class="remove">
+    <br class="remove">
+    <br class="remove">
+    <br class="remove">
+    <div class="end">
+        <img src="images/jatin-avatar.jpg" alt="jatin's-avatar">
+        <h5>Jatin Kumar Vats</h5>
+        <span>
+            <a href="https://www.instagram.com/jatinvats525/" target="blank" class="fab fa-instagram"></a>
+            <br class="visible-xs">
+            <a href="mailto:jkvats525@gmail.com?subject=Mail%20from%20get.Ripped()" target="blank"
+                class="fas fa-envelope"></a>
+        </span>
+        <br>
+    </div>
+</body>
+
+</html>
