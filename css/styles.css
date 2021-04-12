@@ -187,25 +187,25 @@ td {
 }
 @media (min-width: 992px) {
   .end img:active {
-    width: 300px;
+    width: 90px;
     opacity: 1;
-    border: #fdfefe 4px solid;
-    -webkit-transition: 0.5s linear;
-    -moz-transition: 0.5s linear;
-    -o-transition: 0.5s linear;
-    transition: 0.5s linear;
+    border: #fdfefe 1px solid;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s ease-in-out;
   }
 }
 
 @media (max-width: 991px) {
   .end img:hover {
-    width: 300px;
+    width: 90px;
     opacity: 1;
-    border: #fdfefe 4px solid;
-    -webkit-transition: 0.5s linear;
-    -moz-transition: 0.5s linear;
-    -o-transition: 0.5s linear;
-    transition: 0.5s linear;
+    border: #fdfefe 1px solid;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s ease-in-out;
   }
 }
 
